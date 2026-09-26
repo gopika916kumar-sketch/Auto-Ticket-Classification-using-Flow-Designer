@@ -1,0 +1,73 @@
+Auto Ticket Classification Using Flow Designer
+2.Requirement Analysis Phase
+2.1 Functional Requirements
+The system should be able to:
+
+Detect when a new ticket is created.
+
+Read relevant ticket information.
+
+Identify the ticket category based on predefined conditions.
+
+Set the appropriate category or classification.
+
+Assign the ticket to the appropriate support group.
+
+Set or update priority when required.
+
+Add work notes or comments describing the classification.
+
+Update the ticket automatically.
+
+Handle tickets that do not match any predefined classification.
+
+2.2 Non-Functional Requirements
+The system should provide:
+
+Reliability: The flow should execute consistently.
+
+Maintainability: Classification rules should be easy to modify.
+
+Scalability: The workflow should support increasing ticket volumes.
+
+Performance: Tickets should be classified without unnecessary delays.
+
+Security: Only authorized users should be able to modify the workflow and classification rules.
+
+Usability: Administrators should be able to understand and maintain the flow.
+
+2.3 Input Requirements
+Typical ticket information may include:
+
+Ticket number
+
+Short description
+
+Description
+
+Category
+
+Subcategory
+
+Priority
+
+Impact
+
+Urgency
+
+Caller/requester
+
+Assignment group
+
+2.4 Output Requirements
+After processing, the system should produce:
+
+Classified ticket category.
+
+Appropriate assignment group.
+
+Updated priority where applicable.
+
+Classification-related work notes.
+
+Successfully updated ticket record.
