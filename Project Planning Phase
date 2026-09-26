@@ -1,0 +1,48 @@
+Auto Ticket Classification using Flow Designer
+4.Project Planning Phase
+4.1 Project Activities
+The project can be planned in the following stages:
+
+Phase	Activity
+1	Identify the ticket-classification problem
+2	Gather functional requirements
+3	Design classification rules
+4	Design the Flow Designer workflow
+5	Configure the flow
+6	Test different ticket scenarios
+7	Prepare project documentation
+8	Demonstrate the completed project
+
+4.2 Resources Required
+Software
+ServiceNow platform
+
+Flow Designer
+
+ServiceNow Incident/Ticket Management module
+
+Web browser
+
+Hardware
+Computer or laptop
+
+Internet connection
+
+Human Resources
+Project developer
+
+Project guide/mentor
+
+Tester or end user
+
+4.3 Expected Timeline
+A sample project schedule is:
+
+Week	Work
+Week 1	Brainstorming and problem identification
+Week 2	Requirement analysis
+Week 3	System and flow design
+Week 4	Project planning and configuration
+Week 5–6	Flow development
+Week 7	Testing and debugging
+Week 8	Documentation and demonstration
