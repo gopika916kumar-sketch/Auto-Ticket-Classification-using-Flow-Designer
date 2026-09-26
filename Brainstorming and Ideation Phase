@@ -1,0 +1,38 @@
+# Auto-Ticket-Classification-using-Flow-Designer
+Auto Ticket Classification using Flow Designer
+1.Brainstorming and Ideation Phase
+1.2 Problem Statement
+Manual ticket classification can lead to:
+
+Delayed ticket assignment.
+
+Incorrect categorization.
+
+Increased workload for support administrators.
+
+Inconsistent ticket handling.
+
+Longer resolution times.
+
+Difficulty in managing a large number of tickets.
+
+The proposed system automates these activities using Flow Designer.
+
+1.3 Proposed Solution
+The system uses Flow Designer to create an automated workflow. When a new ticket is created or updated, the flow analyzes the available ticket information and applies predefined conditions. Based on these conditions, the ticket is automatically categorized and routed to the appropriate support group.
+
+1.4 Objectives
+The main objectives are:
+
+To automate ticket classification.
+
+To reduce manual effort.
+
+To improve ticket-routing accuracy and consistency.
+
+To automatically assign tickets to appropriate support groups.
+
+To reduce the time required for initial ticket processing.
+
+To provide a structured and maintainable workflow.
+
