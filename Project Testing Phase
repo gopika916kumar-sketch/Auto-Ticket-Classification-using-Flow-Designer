@@ -1,0 +1,36 @@
+Auto Ticket Classification using Flow Designer
+6.Project Testing Phase
+Testing is performed to verify that the flow correctly classifies different types of tickets.
+
+6.1 Test Cases
+Test Case	Input	Expected Result
+TC01	"Forgot my password"	Access Issue / Service Desk
+TC02	"Laptop screen not working"	Hardware Issue / Hardware Support
+TC03	"Application is showing an error"	Software Issue / Application Support
+TC04	"Office Wi-Fi is not working"	Network Issue / Network Support
+TC05	"Email is not working"	Email Issue / Messaging Support
+TC06	Unrecognized issue	General / Service Desk
+
+6.2 Testing Objectives
+The testing phase verifies:
+
+Whether the trigger executes correctly.
+
+Whether conditions identify the correct ticket type.
+
+Whether the correct category is selected.
+
+Whether the correct assignment group is selected.
+
+Whether ticket fields are updated.
+
+Whether unmatched tickets are handled correctly.
+
+Whether the flow handles multiple ticket scenarios without errors.
+
+6.3 Error Handling
+If a ticket does not satisfy any classification condition, the flow should send it to a default category and support group rather than leaving the ticket without an assignment.
+
+Example:
+
+Unclassified Ticket → General Category → Service Desk
