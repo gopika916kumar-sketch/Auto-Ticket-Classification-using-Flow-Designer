@@ -1,0 +1,93 @@
+Auto Ticket Classification using Flow Designer
+5.Project Development Phase
+5.1 Flow Creation
+A new flow is created in Flow Designer.
+
+The flow contains:
+
+Trigger → Conditions → Classification → Assignment → Update
+
+Step 1: Create the Trigger
+Configure the trigger to run when a ticket is created.
+
+Example:
+
+Trigger: Record Created
+Table: Incident/Ticket
+
+Step 2: Retrieve Ticket Information
+The flow reads fields such as:
+
+Short description
+
+Description
+
+Category
+
+Priority
+
+Impact
+
+Urgency
+
+Step 3: Apply Classification Conditions
+The flow evaluates the ticket information.
+
+Example:
+
+IF Short Description contains "password"
+    Category = Access
+    Assignment Group = Service Desk
+
+ELSE IF Short Description contains "laptop"
+    Category = Hardware
+    Assignment Group = Hardware Support
+
+ELSE IF Short Description contains "network"
+    Category = Network
+    Assignment Group = Network Support
+
+ELSE IF Short Description contains "application"
+    Category = Software
+    Assignment Group = Application Support
+
+ELSE
+    Category = General
+    Assignment Group = Service Desk
+
+Step 4: Update the Ticket
+After classification, the flow updates the ticket record.
+
+Possible fields include:
+
+Category
+
+Subcategory
+
+Assignment group
+
+Priority
+
+Work notes
+
+Step 5: Save and Activate the Flow
+After configuration, the flow is tested and activated.
+
+5.2 Example
+Suppose a user creates a ticket:
+
+Short Description:
+"Unable to connect to office Wi-Fi"
+
+The flow identifies the keyword Wi-Fi.
+
+The ticket can then be automatically classified as:
+
+Category: Network Issue
+
+Assignment Group: Network Support
+
+Work Note: Automatically classified by Flow Designer.
+
+This eliminates the need for manual initial classification.
+
