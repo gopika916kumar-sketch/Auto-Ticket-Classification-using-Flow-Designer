@@ -1,0 +1,70 @@
+Auto Ticket Classification using Flow Designer
+3. Project Design Phase
+3.1 System Architecture
+The proposed system consists of the following components:
+
+User → Ticket Creation → Flow Designer Trigger → Classification Logic → Ticket Update → Assignment Group → Support Team
+
+The flow automatically processes the ticket after it satisfies the configured trigger conditions.
+
+3.2 Flow Designer Components
+The project can contain the following Flow Designer components:
+
+Trigger
+The flow is triggered when a ticket is:
+
+Created, or
+
+Updated based on defined conditions.
+
+Actions
+Possible actions include:
+
+Look up ticket information.
+
+Evaluate ticket fields.
+
+Update ticket fields.
+
+Assign the ticket to a support group.
+
+Add work notes.
+
+Send a notification when required.
+
+Flow Logic
+Conditions can be configured for different types of tickets.
+
+For example:
+
+Ticket Information	Classification	Assignment Group
+Password reset	Access Issue	Service Desk
+Laptop not working	Hardware Issue	Hardware Support
+Application error	Software Issue	Application Support
+Network unavailable	Network Issue	Network Support
+Email problem	Email Issue	Messaging Support
+
+3.3 Classification Logic
+The classification process can use conditions based on keywords or existing ticket fields.
+
+For example:
+
+IF short description contains "password"
+→ Category = Access Issue
+→ Assignment Group = Service Desk
+
+IF short description contains "laptop" or "keyboard"
+→ Category = Hardware Issue
+→ Assignment Group = Hardware Support
+
+IF short description contains "application error"
+→ Category = Software Issue
+→ Assignment Group = Application Support
+
+IF short description contains "network" or "Wi-Fi"
+→ Category = Network Issue
+→ Assignment Group = Network Support
+
+ELSE
+→ Category = General/Unclassified
+→ Assignment Group = Service Desk
