@@ -1,0 +1,40 @@
+Auto Ticket Classification Using Flow Designer
+8.Demonstration Objective
+The demonstration shows how a newly created ticket is automatically processed by the Flow Designer workflow.
+
+8.2 Demonstration Steps
+Demo video link:https://drive.google.com/file/d/1DtOf1HlBEul17asW-K3ScR6ZJCY14Z4m/view?usp=sharing
+Step 1
+Create a new ticket.
+
+Example:
+
+Short Description:
+"Unable to connect to Wi-Fi"
+
+Step 2
+Submit the ticket.
+
+Step 3
+The Flow Designer trigger detects the newly created ticket.
+
+Step 4
+The flow evaluates the ticket information.
+
+Step 5
+The classification condition identifies the ticket as a network-related issue.
+
+Step 6
+The flow automatically updates:
+
+Category: Network Issue
+
+Assignment Group: Network Support
+
+Step 7
+A work note can be added:
+
+"Ticket automatically classified and routed using Flow Designer."
+
+Step 8
+The final ticket is displayed to demonstrate that classification and assignment occurred automatically.
