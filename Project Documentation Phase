@@ -1,41 +1,116 @@
 Auto Ticket Classification using Flow Designer
 7.Project Documentation Phase
+
 7.1 Project Documentation Contents
 The final project documentation should contain:
 
 Project title.
-
+Auto Ticket Classification Using Flow Designer
 Introduction.
+The Auto Ticket Classification using Flow Designer project is designed to automatically classify IT support tickets based on their issue 
+description. The system identifies the appropriate Category and Subcategory for each ticket without requiring manual classification.
+The project uses ServiceNow Flow Designer to automate ticket processing and improve the efficiency of IT support operations.
 
 Problem statement.
+In a manual ticket management system, support staff need to read each ticket and manually select its category and subcategory. 
+This process can take more time and may result in incorrect classification.
+The proposed system automatically analyzes the issue description and assigns the appropriate category and subcategory. 
+It also helps in sending automated notifications and maintaining ticket information in a structured format.
 
 Existing system.
+In the existing system:
+Tickets are classified manually.
+Support staff need to select the category and subcategory.
+Manual classification takes additional time.
+Incorrect classification may occur.
+Ticket processing can be inconsistent.
+Notifications may require manual action.
 
 Proposed system.
+The proposed system uses ServiceNow Flow Designer to automate ticket classification.
+When a ticket is created, the system checks the issue description and applies predefined classification rules.
+Based on the matching conditions, the system automatically assigns the appropriate category and subcategory.
+The system can also send an automated email notification to the caller after ticket creation.
 
 Objectives.
 
+The main objectives of this project are:
+To automatically classify IT tickets.
+To assign suitable categories and subcategories.
+To reduce manual intervention.
+To improve ticket processing speed.
+To provide consistent ticket classification.
+To send automated notifications to users.
+To make the workflow easy to maintain and scale.
+
 Requirements.
+Functional Requirements
+The system should accept IT support tickets.
+The system should read the issue description.
+The system should identify the appropriate category.
+The system should assign the corresponding subcategory.
+The system should update the ticket automatically.
+The system should send an automated notification to the caller.
 
 System design.
+The system consists of the following major steps:
+Ticket Creation → Read Issue Description → Apply Classification Rules → Assign Category → Assign Subcategory → Update Ticket 
+→ Send Notification
+The workflow is designed to process tickets automatically with minimum manual intervention.
 
 Flow Designer workflow.
+The Flow Designer workflow automates the ticket classification process.
+Workflow Steps:
+A new IT ticket is created.
+The Flow Designer flow is triggered.
+The system reads the issue description.
+Conditions are checked based on the issue.
+The appropriate category is identified.
+The corresponding subcategory is selected.
+The ticket information is updated.
+An automated email notification is sent to the caller.
+This workflow reduces manual work and provides faster ticket processing.
 
 Classification rules.
+Classification rules are used to identify the correct category and subcategory based on the ticket description.
+For example:
+Hardware-related issue → Hardware category
+Software-related issue → Software category
+Network-related issue → Network category
+Password/Login issue → Access-related category
+The exact category and subcategory are selected according to the conditions defined in the Flow Designer.
 
 Implementation details.
+The project is implemented using ServiceNow Flow Designer.
+The flow contains trigger conditions, classification logic, record update actions, and notification actions.
+The conditions examine the ticket information and determine the appropriate classification.
+After classification, the ticket record is automatically updated with the selected category and subcategory.
 
 Test cases.
+Test Case
+Input
+Expected Result
+TC01
+Hardware issue
+Hardware category is assigned
+TC02
+Software issue
+Software category is assigned
+TC03
+Network issue
+Network category is assigned
+TC04
+Login/Password issue
+Access-related category is assigned
+TC05
+New ticket creation
+Flow is triggered automatically
 
 Results.
+The system successfully automates the classification of IT tickets based on their issue descriptions. 
+The appropriate category and subcategory are assigned through the Flow Designer workflow.
+The project reduces manual classification work and provides a structured and consistent ticket management process.
 
-Advantages.
-
-Limitations.
-
-Future enhancements.
-
-Conclusion.
 
 7.2 Advantages
 The proposed system provides several advantages:
@@ -83,4 +158,11 @@ Integration with knowledge articles.
 Automatic recommendation of solutions.
 
 Analytics dashboards for classification accuracy.
+
+Conclusion.
+The Auto Ticket Classification using Flow Designer project provides an automated solution for classifying IT support tickets.
+By using ServiceNow Flow Designer, the system can identify the appropriate category and subcategory based on the ticket description.
+The automation reduces manual effort, improves consistency, and helps in faster ticket processing.
+The system can also be further enhanced with AI-based classification and advanced automation features.
+
 
